@@ -1,0 +1,189 @@
+
+.intro_content{
+    padding: 5%;
+}
+
+.intro_container{
+    border-right: solid;
+    border-right-color: transparent;
+}
+/* Menu Styling Ends */
+
+
+.tab-select .col-sm-6.sign-in{
+    padding-right: 0px;
+}
+
+.tab-select .col-sm-6.sign-up{
+    padding-left: 0px;
+}
+
+.loginContainer {
+    position: absolute;
+    top:10%;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.loginContainer > div {
+    height: 100%;  /* make each column to take all available height */
+}
+
+html, body{
+    height: 100%;
+}
+
+.tab-container{
+    height: 800px;
+}
+
+.tab-container .tab-select .md-button {
+    width: 100%;
+    padding: 0%;
+    background-color: #012989;
+    color: white;
+}
+
+.login-container{
+    margin-top: 2%;
+}
+
+
+.login-container .tab-select .active .md-button, .login-container .tab-select .active .md-button:hover, .login-container .tab-select .active .md-button:focus {
+    border-color: transparent transparent transparent transparent ;
+    border-bottom-color: #ffffff;
+    background-color: white;
+    color: #012989;
+
+}
+
+.login-container .tab-select .active .md-button:hover{
+    background-color: white !important;
+    border-color: white !important;
+
+}
+
+.login-container .tab-select .md-button {
+    border-color: #012989 #012989 #012989 #012989;
+    border: solid 2px #012989;
+    margin: 0%;
+    color: white;
+    border-radius: 0px;
+}
+
+.tab-content{
+    border-top: transparent;
+    padding: 2%;
+}
+
+.tab-content {
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+#itemSubmit{
+    color: white;
+    background-color: #012989;
+    width: 100%;
+}
+
+#itemSubmit:hover{
+    color: white;
+    background-color: #0CA9EC !important;
+    width: 100%;
+    border-color: #0CA9EC !important;
+}
+
+md-content{
+    background-color: white !important;
+}
+
+.intro_container h1,a, p{
+    color: #012989;
+}
+
+.main_container{
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*color:  #012989  light */
+/*color:  #05146e   dark */
+
+
+md-select {
+    padding-top: 0px;
+    padding-bottom: 17px;
+}
+
+.loginContainer md-select .md-select-label {
+    width: 100%;
+}
+
+.form_icon{
+    font-size: large;
+}
+
+p{
+    font-size: large;
+}
+
+.intro_container{
+    margin-top: 10%;
+    margin-bottom: auto;
+}
+
+.checked{
+    color: #edd46b ;
+}
+
+.hint{
+    color: #a3a3a3;
+}
+#containerColor
+{
+	background-color: white;
+}
+#containerColorP
+{
+	width : 100%;	
+}
+.cardAdd
+{
+	width: 930px;
+    padding: 0px 0px 0px 6px;
+    background: yellow;
+    margin: auto;
+    /* border-radius: 10px; */
+    transition: .3s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    margin: 70px 0 0 235px;
+}
+@media (max-width:500px){
+    .tab-select .col-sm-6.sign-in{
+        padding-right: 15px;
+    }
+
+    .tab-select .col-sm-6.sign-up{
+        padding-left: 15px;
+    }
+
+    .tab-container{
+        height: auto;
+    }
+    html{
+        background-image: url("../Images/gray_background.jpg");
+        background-repeat: repeat-y;
+    }
+}
+
