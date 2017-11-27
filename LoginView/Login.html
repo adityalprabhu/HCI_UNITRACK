@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html style=" background-image: url('/Images/gray_background.jpg')">
 <head>
@@ -128,4 +129,136 @@
                         <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
                             Aliquam in felis sit amet augue.</div>
                     </div>
+=======
+<!DOCTYPE html>
+<html style=" background-image: url('/Images/gray_background.jpg')">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="LoginView/login.css">
+
+</head>
+<body>
+
+
+<!--<md-toolbar id="unitrack_header" style="background-color: #12908E">
+    <div class="md-toolbar-tools">
+        <div id="header" >
+            <img href="#/" src="Images/Logo_temp.png" alt="website_logo"
+                 id="unitrack_logo_size"> <i class="fa fa-paper-plane"
+                                             aria-hidden="true" id="unitrack_logo_icon"></i>
+        </div>
+    </div>
+</md-toolbar>-->
+
+
+<div class="loginContainer">
+    <div class="row">
+        <div class="col-sm-6 intro_container text-justify text-center">
+            <!--Website Introduction-->
+            <h1 class="text-center"><a href="#/home">What is UniTrack?</a></h1>
+            <div class="intro_content">
+                <p><b>UniTrack is a one-stop shop for monitoring all the deliveries being shipped for you across different carriers. This product aims to relieve the user of the hassle of tracking multiple packages on different sites for different items. Here, you can ascertain the state of all these packages in a glimpse with just a click.</b></p>
+            </div>
+        </div>
+
+        <div class="col-sm-6 login-container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 tab-container">
+                    <div class="row tab-select" >
+                        <div class="col-sm-6  sign-in" ng-class="{active : formType.signIn}"><md-button class="md-primary" ng-click="signIn1()">Sign In</md-button></div>
+                        <div class="col-sm-6  sign-up" ng-class="{active : !formType.signIn}"><md-button class="md-primary" ng-click="signUp()">Sign Up</md-button></div>
+                    </div>
+                    <div class="col-sm-8 tab-content">
+                        <md-content layout-padding="">
+                            <form ng-submit="submit()" name="loginForm">
+
+                                <md-input-container ng-show="!formType.signIn" class="md-block">
+                                    <label>Name</label>
+                                    <md-icon class="fa fa-user form_icon"></md-icon>
+                                    <input ng-required="!formType.signIn" name="name" ng-model="userDetails.name">
+                                    <!--<div class="hint" >Tell us what we should call you!</div>-->
+                                    <div ng-messages="loginForm.name.$error">
+                                        <div ng-message="required">Name is required</div>
+                                    </div>
+                                </md-input-container>
+
+                                <md-input-container class="md-block">
+                                    <label>Email</label>
+                                    <md-icon class="fa fa-envelope form_icon"></md-icon>
+                                    <input required="" type="email" name="email" ng-model="userDetails.email">
+                                    <!--<div class="hint" >How should we contact you?</div>-->
+                                    <div ng-messages="loginForm.email.$error" role="alert">
+                                        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                                            Your email must be between 10 and 100 characters long and look like an e-mail address.
+                                        </div>
+                                    </div>
+                                </md-input-container>
+
+
+                                <md-input-container class="md-block">
+                                    <label>Password</label>
+                                    <md-icon class="fa fa-key form_icon"></md-icon>
+                                    <input required="" type={{inputType}} name="password" ng-model="userDetails.password" min="6">
+                                    <!--<div class="hint" >Use this to secure your account</div>-->
+                                    <div ng-messages="loginForm.password.$error">
+                                        <div ng-message="required">This is required</div>
+                                    </div>
+                                </md-input-container>
+
+                                <md-input-container ng-show="!formType.signIn" class="md-block">
+                                    <label>Confirm Password</label>
+                                    <md-icon class="fa fa-key form_icon"></md-icon>
+                                    <input ng-required="!formType.signIn" type={{inputType}} name="confirmPassword" ng-model="userDetails.confirmPassword" min="6" required="">
+                                    <div ng-show="(loginForm.password.$modelValue !== loginForm.confirmPassword.$modelValue)
+                                        && loginForm.confirmPassword.$touched
+                                        && !loginForm.confirmPassword.$error.required" style="color: #DD2C00">Passwords do no match!</div>
+                                    <div ng-messages="loginForm.confirmPassword.$error">
+                                        <div ng-message="required">This is required</div>
+                                    </div>
+                                </md-input-container>
+
+
+
+
+
+
+                                <md-input-container class="md-block" class="rust">
+                                    <md-checkbox name="show" ng-model="userDetails.showPassword" ng-click ="showPassword()" required="">
+                                        Show Password
+                                    </md-checkbox>
+                                </md-input-container>
+
+                                <div>
+                                    <md-button class="submitButton" type="submit">Submit</md-button>
+                                </div>
+                            </form>
+                        </md-content>
+
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+
+            </div>
+            <!-- /tabs -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!--<div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#a" data-toggle="tab">Sign Up</a></li>
+                        <li><a href="#b" data-toggle="tab">Sign In</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate.
+                            Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+                        <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                            Aliquam in felis sit amet augue.</div>
+                    </div>
+>>>>>>> a4d1fc1f903885dbdb05057f38270cc719741308
                 </div>-->
